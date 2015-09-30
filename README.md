@@ -7,4 +7,4 @@ avoid anything that to be not intended happen. After that, follow this step:
 it also provides how to build virtual environment for your workspace. Before
 you are able to do that, you must install python first.
 2. For tutorial, you can visit http://flask.pocoo.org/docs/0.10/tutorial .
-   (sorry if it's not helped.. :P)
+   (sorry if it doesn't help.. :P)
