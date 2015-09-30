@@ -1,9 +1,12 @@
 # coding:utf-8
 
 from flask import Flask, render_template, request
+from flask.ext.bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.debug = True
+
+bootstrap = Bootstrap(app)
 
 @app.route("/")
 @app.route("/index")
@@ -12,7 +15,7 @@ def hello():
 
 @app.route("/user/<name>")
 def user(name):
-    return '<h1>Hello %s!</h1>' % name
+    return render_template("user.html", name=name)
 
 @app.route('/agent')
 def agent():
